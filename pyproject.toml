@@ -1,0 +1,12 @@
+[project]
+name = "lg"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = ["sqlmodel", "httpx", "dnspython", "tldextract", "selectolax", "htmldate", "playwright", "typer", "streamlit", "pyyaml", "python-dotenv", "pytest"]
+[project.scripts]
+lg = "lg.cli:app"
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+[tool.setuptools]
+packages = ["lg"]

@@ -1,0 +1,48 @@
+categories:
+  reefer_transport:
+    weight: 10
+    phrases: [reefer transport, refrigerated truck service, cold chain logistics, reefer container transport, refrigerated van rental]
+    exclude: [cold storage only]
+  logistics_warehouses:
+    weight: 8
+    phrases: [warehouse, warehousing services, logistics warehouse, 3PL logistics, godown for rent, container freight station, cold storage warehouse]
+    exclude: [self storage, self-storage, courier franchise, courier]
+  construction_contractors:
+    weight: 8
+    phrases: [construction company, building contractor, civil contractor, PWD contractor, construction contractors]
+    exclude: [interior, hardware, real estate, realtor, broker]
+# Kochi bounding box (low/high lat,lng); each zone is a rectangle
+bbox: {low: [9.85, 76.20], high: [10.25, 76.45]}
+address_keywords: [Kochi, Cochin, Ernakulam]
+zones:
+  Ernakulam city: {low: [9.96, 76.27], high: [10.01, 76.31]}
+  Edappally: {low: [10.00, 76.29], high: [10.04, 76.33]}
+  Palarivattom: {low: [9.99, 76.29], high: [10.01, 76.32]}
+  Vyttila: {low: [9.95, 76.30], high: [9.98, 76.34]}
+  Kakkanad: {low: [10.00, 76.33], high: [10.04, 76.40]}
+  Kalamassery: {low: [10.03, 76.30], high: [10.07, 76.35]}
+  Eloor-Edayar: {low: [10.05, 76.27], high: [10.10, 76.32]}
+  Aluva: {low: [10.08, 76.33], high: [10.13, 76.38]}
+  Nedumbassery: {low: [10.12, 76.36], high: [10.18, 76.42]}
+  Willingdon Island: {low: [9.94, 76.25], high: [9.98, 76.28]}
+  Vallarpadam: {low: [9.97, 76.23], high: [10.02, 76.28]}
+  Mattancherry-Fort Kochi: {low: [9.93, 76.23], high: [9.97, 76.27]}
+  Thrippunithura: {low: [9.92, 76.33], high: [9.96, 76.37]}
+  Maradu-Kundannoor: {low: [9.90, 76.31], high: [9.95, 76.35]}
+  Cheranalloor: {low: [10.03, 76.26], high: [10.07, 76.30]}
+places:
+  page_size: 20
+  max_pages: 3
+  monthly_free_requests: 1000
+  sweep_request_cap: 1000  # per run; the monthly total is also capped at monthly_free_requests
+social_hosts: [facebook.com, fb.com, instagram.com, linktr.ee, wa.me, twitter.com, x.com, youtube.com]
+directory_hosts: [justdial.com, indiamart.com, sulekha.com, tradeindia.com, business.site, yellowpages.in, 99acres.com]
+parked_keywords: [domain is for sale, this domain may be for sale, buy this domain, parked free, domain parking, coming soon, under construction]
+parked_nameservers: [sedoparking.com, parkingcrew.net, bodis.com, above.com, afternic.com]
+staleness:
+  old_at: 50
+  dated_at: 25
+priority:
+  need: {NONE: 40, SOCIAL: 40, DIRECTORY: 40, DEAD: 35, OLD: 30, DATED: 15, MODERN: 0}
+  tier_a: 70
+  tier_b: 45
